@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pakora</title>
+    <link rel="stylesheet" href="recipe.css">
+    <style>
+        img {
+            height: 550px;
+            width: 500px;
+            border-radius: 15px;
+        }
+    </style>
+    <script src="recipe.js"></script>
+</head>
+<body>
+    <div class="header">
+        <h1>Pakora</h1>
+        <button class="home-button" onclick="window.history.back();">
+            <img src="home.png" alt="Back">
+        </button>
+    </div>
+    <h3>Cooking Time: 15-20 minutes</h3>
+    <p>Pakoras are crispy, deep-fried Indian snacks made with gram flour and vegetables or paneer, spiced with aromatic Indian seasonings.</p>
+    
+    <div class="container">
+        <div class="ingredients">
+            <h2>Ingredients</h2>
+            <ul class="checklist">
+                <li><input type="checkbox" id="besan"><label for="besan"> 1 cup Gram flour (Besan)</label></li>
+                <li><input type="checkbox" id="water"><label for="water"> ½ cup Water (adjust as needed)</label></li>
+                <li><input type="checkbox" id="salt"><label for="salt"> 1 medium Onion (sliced)</label></li>
+                <li><input type="checkbox" id="turmeric"><label for="turmeric"> 1 small Potato (thinly sliced)</label></li>
+                <li><input type="checkbox" id="chili"><label for="chili"> ½ cup Spinach or any leafy greens (optional)</label></li>
+                <li><input type="checkbox" id="garam-masala"><label for="garam-masala">1 tsp Carom seeds (Ajwain)</label></li>
+                <li><input type="checkbox" id="cumin"><label for="cumin"> 1 tsp Cumin seeds</label></li>
+                <li><input type="checkbox" id="vegetables"><label for="vegetables"> 1 tsp Red chili powder</label></li>
+                <li><input type="checkbox" id="oil"><label for="oil"> ½ tsp Turmeric powder</label></li>
+                <li><input type="checkbox" id="oil"><label for="oil">1 tsp Coriander powder</label></li>
+                <li><input type="checkbox" id="oil"><label for="oil"> ½ tsp Turmeric powder</label></li>
+                <li><input type="checkbox" id="oil"><label for="oil"> 1 tsp Garam masala</label></li>
+                <li><input type="checkbox" id="oil"><label for="oil"> 1-2 Green chilies (finely chopped)</label></li>
+                <li><input type="checkbox" id="oil"><label for="oil"> Salt to taste</label></li>
+                <li><input type="checkbox" id="oil"><label for="oil"> Oil for deep frying</label></li>
+            </ul>
+        </div>
+        <img src="pakora.png" alt="Pakora">
+    </div>
+
+    <div class="container">
+        <div class="procedure">
+            <h2>Procedure</h2>
+            <ul>
+                <li>Prepare the Batter: In a bowl, mix gram flour, salt, and all spices.</li>
+                <li>Gradually add water while stirring to form a thick, lump-free batter.</li>
+                <li>Add Vegetables: Mix sliced onions, potatoes, and other vegetables into the batter.</li>
+                <li>Heat the Oil: Pour oil into a deep pan and heat it over medium flame.</li>
+                <li>Fry the Pakoras: Drop spoonfuls of batter into hot oil and fry until golden brown.</li>
+                <li>Remove from oil and place on a paper towel to drain excess oil.</li>
+                <li>Serve Hot: Enjoy with mint chutney or tomato ketchup.</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="nutrition-fact-container">
+        <table>
+            <tr><th>Nutrient</th><th>Amount</th></tr>
+            <tr><td>Calories</td><td>200-250 kcal</td></tr>
+            <tr><td>Carbohydrates</td><td>20-25g</td></tr>
+            <tr><td>Protein</td><td>5-7g</td></tr>
+            <tr><td>Fats</td><td>10-12g</td></tr>
+            <tr><td>Fiber</td><td>3-4g</td></tr>
+        </table>
+        <div class="fun-fact"><strong>Fun Fact:</strong> Pakoras have a rich history dating back to ancient India! 🇮🇳 The word "pakora" comes from the Sanskrit words "pakvavaṭa" (pakva = cooked, vaṭa = small lump or round ball).</div>
+
+    </div>
+</body>
+</html>

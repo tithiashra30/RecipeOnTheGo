@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veg Biryani</title>
+    <link rel="stylesheet" href="recipe.css">
+    <style>
+        img {
+            height: 450px;
+            width: 450px;
+            border-radius: 10px;
+            object-fit: cover;
+            display: block;
+            margin: 20px auto;
+        }
+    </style>
+    <script src="recipe.js"></script>
+</head>
+<body>
+    <div class="header">
+        <h1>Veg Biryani</h1>
+        <button class="home-button" onclick="window.history.back();">
+            <img src="home.png" alt="Back">
+        </button>
+    </div>
+    <h3>Preparation Time: 45 minutes</h3>
+    <p>Aromatic and flavorful vegetable biryani made with fragrant rice, mixed vegetables, and spices.</p>
+
+    <div class="container">
+        <div class="ingredients">
+            <h2>Ingredients</h2>
+            <ul class="checklist">
+                <li><input type="checkbox" id="rice"><label for="rice"> 2 cups basmati rice (soaked for 30 minutes)</label></li>
+                <li><input type="checkbox" id="potatoes"><label for="potatoes"> 2 medium potatoes (cubed)</label></li>
+                <li><input type="checkbox" id="carrots"><label for="carrots"> 1 large carrot (chopped)</label></li>
+                <li><input type="checkbox" id="peas"><label for="peas"> ½ cup green peas</label></li>
+                <li><input type="checkbox" id="beans"><label for="beans"> ½ cup green beans (chopped)</label></li>
+                <li><input type="checkbox" id="onions"><label for="onions"> 2 large onions (thinly sliced)</label></li>
+                <li><input type="checkbox" id="tomatoes"><label for="tomatoes"> 2 large tomatoes (chopped)</label></li>
+                <li><input type="checkbox" id="yogurt"><label for="yogurt"> 1 cup yogurt</label></li>
+                <li><input type="checkbox" id="gingerGarlic"><label for="gingerGarlic"> 2 tbsp ginger-garlic paste</label></li>
+                <li><input type="checkbox" id="greenChilies"><label for="greenChilies"> 4 green chilies (slit)</label></li>
+                <li><input type="checkbox" id="mint"><label for="mint"> ½ cup mint leaves</label></li>
+                <li><input type="checkbox" id="coriander"><label for="coriander"> ½ cup chopped coriander leaves</label></li>
+                <li><input type="checkbox" id="spices"><label for="spices"> 2 tsp biryani masala</label></li>
+                <li><input type="checkbox" id="turmeric"><label for="turmeric"> ½ tsp turmeric powder</label></li>
+                <li><input type="checkbox" id="chiliPowder"><label for="chiliPowder"> 1 tsp red chili powder</label></li>
+                <li><input type="checkbox" id="salt"><label for="salt"> Salt to taste</label></li>
+                <li><input type="checkbox" id="ghee"><label for="ghee"> 3 tbsp ghee</label></li>
+                <li><input type="checkbox" id="wholeSpices"><label for="wholeSpices"> Whole spices (bay leaves, cinnamon stick, cloves, cardamom)</label></li>
+                <li><input type="checkbox" id="saffron"><label for="saffron"> A few strands of saffron (soaked in warm milk)</label></li>
+            </ul>
+        </div>
+        <img src="biryani.jpg" alt="Veg Biryani">
+    </div>
+
+    <div class="procedure">
+        <h2>Procedure</h2>
+        <ul>
+            <li>Rinse and soak the basmati rice for 30 minutes, then cook until 70% done and set aside.</li>
+            <li>Heat ghee in a large pan and add whole spices (bay leaves, cinnamon stick, cloves, and cardamom).</li>
+            <li>Sauté onions until golden brown, then add ginger-garlic paste and green chilies.</li>
+            <li>Add chopped tomatoes, turmeric, red chili powder, and biryani masala. Cook until tomatoes soften.</li>
+            <li>Mix in yogurt, carrots, potatoes, peas, and green beans. Cook until vegetables are tender.</li>
+            <li>Layer the partially cooked rice over the vegetable mixture and drizzle saffron milk on top.</li>
+            <li>Sprinkle chopped coriander and mint leaves, cover with a lid, and cook on low heat for 20-25 minutes.</li>
+            <li>Fluff the biryani gently, serve hot, and enjoy!</li>
+        </ul>
+    </div>
+
+    <div class="nutrition-fact-container">
+        <table>
+            <tr><th>Nutrient</th><th>Amount</th></tr>
+            <tr><td>Calories</td><td>350 kcal</td></tr>
+            <tr><td>Carbohydrates</td><td>50g</td></tr>
+            <tr><td>Protein</td><td>7g</td></tr>
+            <tr><td>Fats</td><td>12g</td></tr>
+            <tr><td>Fiber</td><td>5g</td></tr>
+        </table>
+        <div class="fun-fact"><strong>Fun Fact:</strong> Biryani is a fusion of Persian and Indian culinary traditions, becoming a symbol of celebration and festivity.</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanghulu</title>
+    <link rel="stylesheet" href="recipe.css">
+    <style>
+        img {
+            height: 400px;
+            width: 500px;
+            border-radius: 10px;
+        }
+    </style>
+    <script src="recipe.js"></script>
+</head>
+<body>
+    <div class="header">
+        <h1>Tanghulu</h1>
+        <button class="home-button" onclick="window.history.back();">
+            <img src="home.png" alt="Back">
+        </button>
+    </div>
+    <h3>Preparation Time: 20 minutes</h3>
+    <p>Tanghulu is a traditional Chinese candied fruit snack, often made with hawthorn berries or other fruits dipped in hardened sugar syrup.</p>
+
+    <div class="container">
+        <div class="ingredients">
+            <h2>Ingredients</h2>
+            <ul class="checklist">
+                <li><input type="checkbox" id="fruit"><label for="fruit"> 10-12 fresh hawthorn berries (or strawberries, grapes, etc.)</label></li>
+                <li><input type="checkbox" id="sugar"><label for="sugar"> 1 cup granulated sugar</label></li>
+                <li><input type="checkbox" id="water"><label for="water"> ½ cup water</label></li>
+                <li><input type="checkbox" id="skewers"><label for="skewers"> 3-4 bamboo skewers</label></li>
+                <li><input type="checkbox" id="sesame"><label for="sesame"> Optional: Sesame seeds for garnish</label></li>
+            </ul>
+        </div>
+        <img src="tanghulu.jpg" alt="Tanghulu">
+    </div>
+
+    <div class="procedure">
+        <h2>Procedure</h2>
+        <ul>
+            <li>Rinse and dry the fruits completely. Remove any stems if necessary.</li>
+            <li>Thread the fruits onto bamboo skewers (3-4 per skewer).</li>
+            <li>In a saucepan, combine sugar and water. Heat on medium without stirring.</li>
+            <li>Boil until the syrup reaches 300°F (hard crack stage). Test by dropping into cold water—it should harden immediately.</li>
+            <li>Dip each skewer into the hot sugar syrup, coating evenly.</li>
+            <li>Place on a greased surface or parchment paper to cool and harden.</li>
+            <li>Optionally, sprinkle with sesame seeds for added flavor.</li>
+            <li>Enjoy your crispy, sweet Tanghulu!</li>
+        </ul>
+    </div>
+
+    <div class="nutrition-fact-container">
+        <table>
+            <tr><th>Nutrient</th><th>Amount</th></tr>
+            <tr><td>Calories</td><td>180 kcal</td></tr>
+            <tr><td>Carbohydrates</td><td>45g</td></tr>
+            <tr><td>Protein</td><td>1g</td></tr>
+            <tr><td>Fats</td><td>0g</td></tr>
+            <tr><td>Fiber</td><td>2g</td></tr>
+        </table>
+        <div class="fun-fact"><strong>Fun Fact:</strong> Tanghulu has been enjoyed in China for over **800 years** and was originally a royal treat!</div>
+    </div>
+</body>
+</html>

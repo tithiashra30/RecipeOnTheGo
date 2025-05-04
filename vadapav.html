@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vada Pav</title>
+    <link rel="stylesheet" href="recipe.css">
+    <style>
+        img {
+            height: 500px;
+            width: 700px;
+            border-radius: 10px;
+        }
+    </style>
+    <script src="recipe.js"></script>
+</head>
+<body>
+    <div class="header">
+        <h1>Vada Pav</h1>
+        <button class="home-button" onclick="window.history.back();">
+            <img src="home.png" alt="Back">
+        </button>
+    </div>
+    <h3>Preparation Time: 30 minutes</h3>
+    <p>Vada Pav is a popular street food from Mumbai, consisting of a spicy potato fritter inside a bun.</p>
+
+    <div class="container">
+        <div class="ingredients">
+            <h2>Ingredients</h2>
+            <ul class="checklist">
+                <li><input type="checkbox" id="potatoes"><label for="potatoes"> 3 large potatoes (boiled & mashed)</label></li>
+                <li><input type="checkbox" id="garlic"><label for="garlic"> 3 cloves garlic (crushed)</label></li>
+                <li><input type="checkbox" id="chili"><label for="chili"> 2 green chilies (chopped)</label></li>
+                <li><input type="checkbox" id="turmeric"><label for="turmeric"> ½ tsp turmeric powder</label></li>
+                <li><input type="checkbox" id="coriander"><label for="coriander"> 2 tbsp chopped coriander</label></li>
+                <li><input type="checkbox" id="gramflour"><label for="gramflour"> 1 cup gram flour (besan)</label></li>
+                <li><input type="checkbox" id="baking"><label for="baking"> ¼ tsp baking soda</label></li>
+                <li><input type="checkbox" id="water"><label for="water"> Water as needed</label></li>
+                <li><input type="checkbox" id="salt"><label for="salt"> Salt to taste</label></li>
+                <li><input type="checkbox" id="pav"><label for="pav"> 4 pav (bread rolls)</label></li>
+                <li><input type="checkbox" id="oil"><label for="oil"> Oil for frying</label></li>
+            </ul>
+        </div>
+        <img src="vadapav.png" alt="Vada Pav">
+    </div>
+
+    <div class="procedure">
+        <h2>Procedure</h2>
+        <ul>
+            <li>Heat oil in a pan, sauté garlic, green chilies, and turmeric.</li>
+            <li>Add mashed potatoes, salt, and coriander. Mix well.</li>
+            <li>Shape into small balls and set aside.</li>
+            <li>Make a thick batter with gram flour, salt, baking soda, and water.</li>
+            <li>Dip the potato balls in the batter and deep fry until golden.</li>
+            <li>Place the fried vada in a pav with chutney and serve hot!</li>
+        </ul>
+    </div>
+
+    <div class="nutrition-fact-container">
+        <table>
+            <tr><th>Nutrient</th><th>Amount</th></tr>
+            <tr><td>Calories</td><td>290 kcal</td></tr>
+            <tr><td>Carbohydrates</td><td>45g</td></tr>
+            <tr><td>Protein</td><td>6g</td></tr>
+            <tr><td>Fats</td><td>10g</td></tr>
+            <tr><td>Fiber</td><td>4g</td></tr>
+        </table>
+        <div class="fun-fact"><strong>Fun Fact:</strong> Vada Pav is often called the "Indian Burger" and is a favorite among Mumbaikars!</div>
+    </div>
+</body>
+</html>

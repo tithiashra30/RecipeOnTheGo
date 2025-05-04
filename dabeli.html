@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dabeli</title>
+    <link rel="stylesheet" href="recipe.css">
+    <style>
+        img {
+            height: 500px;
+            width: 700px;
+            border-radius: 10px;
+        }
+    </style>
+    <script src="recipe.js"></script>
+</head>
+<body>
+    <div class="header">
+        <h1>Dabeli</h1>
+        <button class="home-button" onclick="window.history.back();">
+            <img src="home.png" alt="Back">
+        </button>
+    </div>
+    <h3>Preparation Time: 30 minutes</h3>
+    <p>Dabeli is a popular Indian street food from Gujarat, made with a spicy potato filling inside a bun, topped with chutneys, pomegranate, and peanuts.</p>
+
+    <div class="container">
+        <div class="ingredients">
+            <h2>Ingredients</h2>
+            <ul class="checklist">
+                <li><input type="checkbox" id="bun"><label for="bun"> 4 pav buns</label></li>
+                <li><input type="checkbox" id="potato"><label for="potato"> 2 boiled potatoes (mashed)</label></li>
+                <li><input type="checkbox" id="dabeliMasala"><label for="dabeliMasala"> 2 tbsp dabeli masala</label></li>
+                <li><input type="checkbox" id="tamarindChutney"><label for="tamarindChutney"> 2 tbsp tamarind chutney</label></li>
+                <li><input type="checkbox" id="garlicChutney"><label for="garlicChutney"> 1 tbsp garlic chutney</label></li>
+                <li><input type="checkbox" id="pomegranate"><label for="pomegranate"> 2 tbsp pomegranate seeds</label></li>
+                <li><input type="checkbox" id="peanuts"><label for="peanuts"> ¼ cup roasted peanuts</label></li>
+                <li><input type="checkbox" id="onion"><label for="onion"> 1 small onion (chopped)</label></li>
+                <li><input type="checkbox" id="butter"><label for="butter"> 2 tbsp butter</label></li>
+                <li><input type="checkbox" id="sev"><label for="sev"> ¼ cup sev</label></li>
+                <li><input type="checkbox" id="coriander"><label for="coriander"> 2 tbsp chopped coriander</label></li>
+            </ul>
+        </div>
+        <img src="dabeli.png" alt="Dabeli">
+    </div>
+
+    <div class="procedure">
+        <h2>Procedure</h2>
+        <ul>
+            <li>Heat oil in a pan, add mashed potatoes and dabeli masala, and mix well.</li>
+            <li>Add tamarind chutney and mix until the potatoes absorb the flavors.</li>
+            <li>Spread the prepared potato filling inside the pav buns.</li>
+            <li>Top with garlic chutney, onions, pomegranate seeds, peanuts, and sev.</li>
+            <li>Toast the buns with butter until golden brown.</li>
+            <li>Garnish with coriander and serve hot.</li>
+        </ul>
+    </div>
+
+    <div class="nutrition-fact-container">
+        <table>
+            <tr><th>Nutrient</th><th>Amount</th></tr>
+            <tr><td>Calories</td><td>250 kcal</td></tr>
+            <tr><td>Carbohydrates</td><td>35g</td></tr>
+            <tr><td>Protein</td><td>6g</td></tr>
+            <tr><td>Fats</td><td>8g</td></tr>
+            <tr><td>Fiber</td><td>4g</td></tr>
+        </table>
+        <div class="fun-fact"><strong>Fun Fact:</strong> Dabeli was invented in Mandvi, Gujarat, and its name means "pressed" in Gujarati!</div>
+    </div>
+</body>
+</html>

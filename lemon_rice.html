@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lemon Rice</title>
+    <link rel="stylesheet" href="recipe.css">
+    <style>
+        img {
+            height: 500px;
+            width: 600px;
+            border-radius: 10px;
+        }
+    </style>
+    <script src="recipe.js"></script>
+</head>
+<body>
+    <div class="header">
+        <h1>Lemon Rice</h1>
+        <button class="home-button" onclick="window.history.back();">
+            <img src="home.png" alt="Back">
+        </button>
+    </div>
+    <h3>Preparation Time: 20 minutes</h3>
+    <p>Lemon Rice is a simple and tangy South Indian dish made with rice, lemon juice, and spices. It’s refreshing and easy to make!</p>
+
+    <div class="container">
+        <div class="ingredients">
+            <h2>Ingredients</h2>
+            <ul class="checklist">
+                <li><input type="checkbox" id="rice"><label for="rice"> 1 cup cooked rice</label></li>
+                <li><input type="checkbox" id="lemon"><label for="lemon"> 2 tbsp lemon juice</label></li>
+                <li><input type="checkbox" id="mustard"><label for="mustard"> 1 tsp mustard seeds</label></li>
+                <li><input type="checkbox" id="curry"><label for="curry"> 8-10 curry leaves</label></li>
+                <li><input type="checkbox" id="greenchili"><label for="greenchili"> 2 green chilies (chopped)</label></li>
+                <li><input type="checkbox" id="turmeric"><label for="turmeric"> ½ tsp turmeric powder</label></li>
+                <li><input type="checkbox" id="salt"><label for="salt"> Salt to taste</label></li>
+                <li><input type="checkbox" id="peanuts"><label for="peanuts"> 2 tbsp roasted peanuts</label></li>
+            </ul>
+        </div>
+        <img src="lemon_rice.png" alt="Lemon Rice">
+    </div>
+
+    <div class="procedure">
+        <h2>Procedure</h2>
+        <ul>
+            <li>Heat oil, add mustard seeds, green chilies, and curry leaves.</li>
+            <li>Add turmeric powder and mix well.</li>
+            <li>Add cooked rice and salt, mix gently.</li>
+            <li>Turn off the heat and add lemon juice. Mix well.</li>
+            <li>Garnish with roasted peanuts and serve!</li>
+        </ul>
+    </div>
+
+    <div class="nutrition-fact-container">
+        <table>
+            <tr><th>Nutrient</th><th>Amount</th></tr>
+            <tr><td>Calories</td><td>220 kcal</td></tr>
+            <tr><td>Carbohydrates</td><td>45g</td></tr>
+            <tr><td>Protein</td><td>5g</td></tr>
+            <tr><td>Fats</td><td>6g</td></tr>
+            <tr><td>Fiber</td><td>3g</td></tr>
+        </table>
+        <div class="fun-fact"><strong>Fun Fact:</strong> Lemon Rice is often packed for travel as it stays fresh for hours!</div>
+    </div>
+</body>
+</html>

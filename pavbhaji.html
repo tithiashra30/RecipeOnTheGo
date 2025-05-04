@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pav Bhaji</title>
+    <link rel="stylesheet" href="recipe.css">
+    <style>
+        img {
+            height: 500px;
+            width: 600px;
+            border-radius: 10px;
+        }
+    </style>
+    <script src="recipe.js"></script>
+</head>
+<body>
+    <div class="header">
+        <h1>Pav Bhaji</h1>
+        <button class="home-button" onclick="window.history.back();">
+            <img src="home.png" alt="Back">
+        </button>
+    </div>
+    <h3>Preparation Time: 40 minutes</h3>
+    <p>Pav Bhaji is a popular Indian street food dish consisting of a spicy mashed vegetable curry served with buttered pav (bread rolls).</p>
+
+    <div class="container">
+        <div class="ingredients">
+            <h2>Ingredients</h2>
+            <ul class="checklist">
+                <li><input type="checkbox" id="potatoes"><label for="potatoes"> 3 medium potatoes (boiled & mashed)</label></li>
+                <li><input type="checkbox" id="tomatoes"><label for="tomatoes"> 2 large tomatoes (chopped)</label></li>
+                <li><input type="checkbox" id="onion"><label for="onion"> 1 large onion (chopped)</label></li>
+                <li><input type="checkbox" id="capsicum"><label for="capsicum"> 1 small capsicum (chopped)</label></li>
+                <li><input type="checkbox" id="peas"><label for="peas"> ½ cup green peas (boiled)</label></li>
+                <li><input type="checkbox" id="butter"><label for="butter"> 3 tbsp butter</label></li>
+                <li><input type="checkbox" id="pavbhaji"><label for="pavbhaji"> 2 tsp pav bhaji masala</label></li>
+                <li><input type="checkbox" id="turmeric"><label for="turmeric"> ½ tsp turmeric powder</label></li>
+                <li><input type="checkbox" id="chili"><label for="chili"> 1 tsp red chili powder</label></li>
+                <li><input type="checkbox" id="salt"><label for="salt"> Salt to taste</label></li>
+                <li><input type="checkbox" id="pav"><label for="pav"> 4 pav (bread rolls)</label></li>
+                <li><input type="checkbox" id="lemon"><label for="lemon"> 1 lemon (for garnish)</label></li>
+                <li><input type="checkbox" id="coriander"><label for="coriander"> 2 tbsp chopped coriander</label></li>
+            </ul>
+        </div>
+        <img src="pavbhaji.png" alt="Pav Bhaji">
+    </div>
+
+    <div class="procedure">
+        <h2>Procedure</h2>
+        <ul>
+            <li>Heat butter in a pan, add onions and sauté until golden brown.</li>
+            <li>Add tomatoes, capsicum, and peas, and cook until soft.</li>
+            <li>Mix in mashed potatoes, pav bhaji masala, turmeric, chili powder, and salt.</li>
+            <li>Use a masher to mash the mixture while cooking for 5-7 minutes.</li>
+            <li>Add a little water, stir, and let it simmer for 5 minutes.</li>
+            <li>Toast pav with butter on a pan and serve with bhaji.</li>
+            <li>Garnish with coriander and lemon wedges. Enjoy!</li>
+        </ul>
+    </div>
+
+    <div class="nutrition-fact-container">
+        <table>
+            <tr><th>Nutrient</th><th>Amount</th></tr>
+            <tr><td>Calories</td><td>400 kcal</td></tr>
+            <tr><td>Carbohydrates</td><td>55g</td></tr>
+            <tr><td>Protein</td><td>9g</td></tr>
+            <tr><td>Fats</td><td>15g</td></tr>
+            <tr><td>Fiber</td><td>6g</td></tr>
+        </table>
+        <div class="fun-fact"><strong>Fun Fact:</strong> Pav Bhaji was originally invented as a quick lunch for Mumbai's textile workers!</div>
+    </div>
+</body>
+</html>

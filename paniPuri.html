@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pani Puri</title>
+    <link rel="stylesheet" href="recipe.css">
+    <style>
+        img {
+            height: 500px;
+            width: 600px;
+            border-radius: 10px;
+        }
+    </style>
+    <script src="recipe.js"></script>
+</head>
+<body>
+    <div class="header">
+        <h1>Pani Puri</h1>
+        <button class="home-button" onclick="window.history.back();">
+            <img src="home.png" alt="Back">
+        </button>
+    </div>
+    <h3>Preparation Time: 30 minutes</h3>
+    <p>Pani Puri is a popular Indian street food consisting of crispy puris filled with spicy, tangy water, mashed potatoes, and chutneys.</p>
+
+    <div class="container">
+        <div class="ingredients">
+            <h2>Ingredients</h2>
+            <h3>For Puris:</h3>
+            <ul class="checklist">
+                <li><input type="checkbox" id="semolina"><label for="semolina"> 1 cup semolina (sooji)</label></li>
+                <li><input type="checkbox" id="flour"><label for="flour"> ¼ cup all-purpose flour</label></li>
+                <li><input type="checkbox" id="salt"><label for="salt"> Salt to taste</label></li>
+                <li><input type="checkbox" id="water"><label for="water"> Water as needed</label></li>
+                <li><input type="checkbox" id="oil"><label for="oil"> Oil for deep frying</label></li>
+            </ul>
+
+            <h3>For Pani (Spicy Water):</h3>
+            <ul class="checklist">
+                <li><input type="checkbox" id="mint"><label for="mint"> 1 cup mint leaves</label></li>
+                <li><input type="checkbox" id="coriander"><label for="coriander"> ½ cup coriander leaves</label></li>
+                <li><input type="checkbox" id="green-chili"><label for="green-chili"> 2 green chilies</label></li>
+                <li><input type="checkbox" id="tamarind"><label for="tamarind"> 2 tbsp tamarind pulp</label></li>
+                <li><input type="checkbox" id="cumin"><label for="cumin"> 1 tsp roasted cumin powder</label></li>
+                <li><input type="checkbox" id="black-salt"><label for="black-salt"> 1 tsp black salt</label></li>
+                <li><input type="checkbox" id="water2"><label for="water2"> 3 cups cold water</label></li>
+            </ul>
+
+            <h3>For Filling:</h3>
+            <ul class="checklist">
+                <li><input type="checkbox" id="potato"><label for="potato"> 2 boiled potatoes (mashed)</label></li>
+                <li><input type="checkbox" id="chickpeas"><label for="chickpeas"> ½ cup boiled chickpeas</label></li>
+                <li><input type="checkbox" id="chutney"><label for="chutney"> Sweet tamarind chutney</label></li>
+            </ul>
+        </div>
+        <img src="panipuri.png" alt="Pani Puri">
+    </div>
+
+    <div class="procedure">
+        <h2>Procedure</h2>
+        <ul>
+            <li>Mix semolina, flour, salt, and water to make a firm dough. Roll into small discs and deep fry until crispy.</li>
+            <li>Blend mint, coriander, chilies, tamarind, cumin, and black salt with water to make spicy pani.</li>
+            <li>Crack open puris and fill with mashed potatoes and chickpeas.</li>
+            <li>Pour spicy pani and tamarind chutney into each puri.</li>
+            <li>Enjoy the crispy and tangy delight immediately!</li>
+        </ul>
+    </div>
+
+    <div class="nutrition-fact-container">
+        <table>
+            <tr><th>Nutrient</th><th>Amount</th></tr>
+            <tr><td>Calories</td><td>180 kcal</td></tr>
+            <tr><td>Carbohydrates</td><td>35g</td></tr>
+            <tr><td>Protein</td><td>5g</td></tr>
+            <tr><td>Fats</td><td>3g</td></tr>
+            <tr><td>Fiber</td><td>4g</td></tr>
+        </table>
+        <div class="fun-fact"><strong>Fun Fact:</strong> Pani Puri is called by different names across India, like Golgappa in North India and Puchka in Bengal!</div>
+    </div>
+</body>
+</html>

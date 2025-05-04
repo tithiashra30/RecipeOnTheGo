@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhokla</title>
+    <link rel="stylesheet" href="recipe.css">
+    <style>
+        img {
+            height: 500px;
+            width: 600px;
+            border-radius: 10px;
+        }
+    </style>
+    <script src="recipe.js"></script>
+</head>
+<body>
+    <div class="header">
+        <h1>Dhokla</h1>
+        <button class="home-button" onclick="window.history.back();">
+            <img src="home.png" alt="Back">
+        </button>
+    </div>
+    <h3>Preparation Time: 35 minutes</h3>
+    <p>Dhokla is a soft, fluffy, and savory steamed cake made from gram flour and spices, a staple in Gujarati cuisine.</p>
+
+    <div class="container">
+        <div class="ingredients">
+            <h2>Ingredients</h2>
+            <ul class="checklist">
+                <li><input type="checkbox" id="besan"><label for="besan"> 1 cup gram flour (besan)</label></li>
+                <li><input type="checkbox" id="curd"><label for="curd"> ½ cup yogurt (curd)</label></li>
+                <li><input type="checkbox" id="water"><label for="water"> ½ cup water</label></li>
+                <li><input type="checkbox" id="eno"><label for="eno"> 1 tsp Eno fruit salt</label></li>
+                <li><input type="checkbox" id="salt"><label for="salt"> Salt to taste</label></li>
+                <li><input type="checkbox" id="sugar"><label for="sugar"> 1 tsp sugar</label></li>
+                <li><input type="checkbox" id="turmeric"><label for="turmeric"> ½ tsp turmeric powder</label></li>
+                <li><input type="checkbox" id="mustard"><label for="mustard"> 1 tsp mustard seeds</label></li>
+                <li><input type="checkbox" id="green-chili"><label for="green-chili"> 2 green chilies (chopped)</label></li>
+                <li><input type="checkbox" id="curry-leaves"><label for="curry-leaves"> Few curry leaves</label></li>
+                <li><input type="checkbox" id="oil"><label for="oil"> 1 tbsp oil</label></li>
+            </ul>
+        </div>
+        <img src="dhokla.png" alt="Dhokla">
+    </div>
+
+    <div class="container">
+        <div class="procedure">
+            <h2>Procedure</h2>
+            <ul>
+                <li>Prepare Batter – Mix gram flour, curd, water, sugar, salt, and turmeric in a bowl.</li>
+                <li>Add Eno – Just before steaming, add Eno and mix well.</li>
+                <li>Steam – Pour batter into a greased tray and steam for 15-20 minutes.</li>
+                <li>Prepare Tempering – Heat oil, add mustard seeds, green chilies, and curry leaves.</li>
+                <li>Pour Over Dhokla – Pour tempering over steamed dhokla and cut into pieces.</li>
+                <li>Serve – Enjoy with green chutney!</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="nutrition-fact-container">
+        <table>
+            <tr><th>Nutrient</th><th>Amount</th></tr>
+            <tr><td>Calories</td><td>150 kcal</td></tr>
+            <tr><td>Carbohydrates</td><td>25g</td></tr>
+            <tr><td>Protein</td><td>6g</td></tr>
+            <tr><td>Fats</td><td>4g</td></tr>
+            <tr><td>Fiber</td><td>3g</td></tr>
+        </table>
+        <div class="fun-fact"><strong>Fun Fact:</strong> Dhokla can be eaten for breakfast, as a snack, or even as a light dinner!</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe on the Go</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100">
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg" id="top">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">
+                <img src="logo.jpg" alt="Logo" class="rounded-circle" width="80px" style="background-color: white;" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav1" aria-controls="nav1" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="nav1">
+                <ul class="navbar-nav ms-auto" style="margin-right: 5px;">
+                    <li class="nav-item active">
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#aboutUs" class="nav-link">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#top-searched" class="nav-link">Top Searched</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#category" class="nav-link">Category</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#faqs" class="nav-link">FAQs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contactUs" class="nav-link">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#links" class="nav-link">Links</a>
+                    </li>
+                    <li class="nav-item">
+                        <!-- profile dropdown -->
+                        <div class="profile-dropdown dropdown ">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"data-bs-toggle="dropdown">Profile</a>
+                            <ul class="dropdown-menu dropdown-menu-right " aria-labelledby="userDropdown">
+                                <li id="loginOption"><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a></li>
+                                <li id="signupOption"><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#registerModal">Register</a></li>
+                                <li id="nameOption" class="dropdown-item" style="display: none;"><span id="userName"></span></li>
+                                <li id="emailOption" class="dropdown-item" style="display: none;"><span id="userEmail"></span></li>
+                                <li id="logoutOption" style="display: none;"><a class="dropdown-item" href="#" onclick="logout()">Logout</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- register modal -->
+    <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="registerModalLabel">Register</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="registerForm">
+                        <div class="mb-3">
+                            <label for="registerName" class="form-label">Username</label>
+                            <input type="text" class="form-control" id="registerName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="registerEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="registerEmail" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="registerPassword" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="registerPassword" required>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary" form="registerForm" style="background-color:#c890A7; border: #c890A7;">Register</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- login modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="loginForm">
+                        <div class="mb-3">
+                            <label for="loginUsername" class="form-label">Username</label>
+                            <input type="text" class="form-control" id="loginUsername" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="loginEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="loginEmail" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="loginPassword" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="loginPassword" required>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary" form="loginForm" style="background-color:#c890A7; border: #c890A7;">Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- home -->
+    <div id="home">
+        <div id="content">
+            <h2><strong>Welcome to Recipe on the Go</strong> <br> Your Fast-Track to Delicious Meals!</h2><br><br>
+            <h4 style="color:#d48daa; margin-top: 20px;text-align:left;">Explore a vast collection of mouthwatering
+                recipes at your fingertips, designed to inspire home cooks and food lovers everywhere.
+                Whether you're searching for quick meals, unique flavor combinations, or specific dietary options,
+                Recipe on the Go makes it easy to find the perfect recipe for every occasion.</h4>
+        </div>
+    </div>
+
+    <!-- aboutUs -->
+    <div id="aboutUs">
+        <div class="row">
+            <div class="col-md-6">
+                <h2 style="text-align: left;">About Us</h2>
+                <h5 style="color:#d48daa;text-align:justify;">Welcome to Recipe on the Go, your ultimate destination for
+                    discovering, cooking, and enjoying delicious meals! Our platform is designed to inspire food
+                    enthusiasts, home cooks, and culinary adventurers by offering a vast collection of carefully curated
+                    recipes that cater to every taste and occasion.</h5>
+                <br>
+                <h3 style="text-align: left;">What You'll Love About Recipe on the Go:</h3>
+                <ul style="text-align: left; margin: 20px;">
+                    <li><strong>Diverse Recipe Categories: </strong>We've got something for everyone! Whether you're
+                        craving classic comfort food, international cuisines, or trendy viral recipes</li>
+                    <li><strong>Top-Searched Recipes: </strong>Explore the most-loved and frequently searched recipes by
+                        our community. Stay updated with trending recipes and never miss out on the buzz!</li>
+                    <li><strong>Step-by-Step Detailed Instructions: </strong>Cooking has never been this simple. Each
+                        recipe comes with clear, detailed, and easy-to-follow steps, accompanied by tips to help you
+                        master any dish.</li>
+                    <li><strong>Nutritional Information: </strong>Health-conscious? No worries! Our recipes include
+                        detailed nutritional information so you can track calories, macros, and other essential data
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-6 text-center">
+                <img src="a.jpg" alt="About Us" class="img-fluid" style="height: 400px;margin-top: 70px;">
+            </div>
+        </div>
+    </div>
+
+    <!-- top searched -->
+    <div id="top-searched" class="carousel slide" data-bs-ride="carousel">
+        <div id="demo">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active" aria-current="true"
+                    aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            </div>
+
+            <div class="carousel-inner" id="img">
+                <div class="carousel-item active">
+                    <img src="muffin.jpg" class="d-block mt-3" alt="Olympics Chocolate Muffins">
+                    <div class="carousel-caption">
+                        <h2><a href="chocolate_muffin.html">Olympics Chocolate Muffins</a></h2>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="Tanghulu.jpg" class="d-block mt-3" alt="Tanghulu">
+                    <div class="carousel-caption">
+                        <h2><a href="tanghulu.html">Tanghulu</a></h2>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="Tini's Mac and Cheese.png" class="d-block mt-3" alt="Tini's Mac and Cheese">
+                    <div class="carousel-caption">
+                        <h2><a href="mac&cheese.html">Tini's Mac and Cheese</a></h2>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="Mama Kelce's Cookies1.jpg" class="d-block mt-3" alt="Mama Kelce's Cookies">
+                    <div class="carousel-caption">
+                        <h2><a href="Mama Kelce's Cookies.html">Mama Kelce's Cookies</a></h2>
+
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="Dense Bean Salad.jpg" class="d-block mt-3" alt="Dense Bean Salad">
+                    <div class="carousel-caption">
+                        <h2><a href="Dense Bean Salad.html">Dense Bean Salad</a></h2>
+
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#top-searched" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#top-searched" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    
+    <!-- category -->
+    <div id="category">
+        <div class="category-container">
+            <div class="category-box">
+                <img src="paneer.jpg" alt="Curries & Gravies">
+                <div class="hover-list">
+                    <ul>
+                        <li><a href="paneer.html">Paneer Butter Masala</a></li>
+                        <li><a href="dal_makhani.html">Dal Makhani</a></li>
+                        <li><a href="chole.html">Chole (Chickpea Curry)</a></li>
+                        <li><a href="baingan_bharta.html">Baingan Bharta</a></li>
+                        <li><a href="malai_kofta.html">Malai Kofta</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="category-box">
+                <img src="panipuri.jpg" alt="Street Food">
+                <div class="hover-list">
+                    <ul>
+                        <li><a href="panipuri.html">Pani Puri</a></li>
+                        <li><a href="vadapav.html">Vada Pav</a></li>
+                        <li><a href="pavbhaji.html">Pav Bhaji</a></li>
+                        <li><a href="kathi_roll.html">Kathi Roll (Veg)</a></li>
+                        <li><a href="dabeli.html">Dabeli</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="category-container">
+            <div class="category-box">
+                <img src="biryani.jpg" alt="Biryani & Rice Dishes">
+                <div class="hover-list">
+                    <ul>
+                        <li><a href="veg_biryani.html">Veg Biryani</a></li>
+                        <li><a href="paneer_biryani.html">Paneer Biryani</a></li>
+                        <li><a href="curd_rice.html">Curd Rice</a></li>
+                        <li><a href="lemon_rice.html">Lemon Rice</a></li>
+                        <li><a href="tomato_rice.html">Tomato Rice</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="category-box">
+                <img src="pakora.png" alt="Snacks">
+                <div class="hover-list">
+                    <ul>
+                        <li><a href="pakora.html">Pakora</a></li>
+                        <li><a href="dhokla.html">Dhokla</a></li>
+                        <li><a href="aloo_tikki.html">Aloo Tikki</a></li>
+                        <li><a href="bhelpuri.html">Bhel Puri</a></li>
+                        <li><a href="sevpuri.html">Sev Puri</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- faqs -->
+    <div class="container my-5" id="faqs">
+        <h1 class="text-center mb-4">FAQS</h1>
+
+        <div class="accordion" id="simpleAccordion">
+            <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion('itemOne')">What is Recipe on the Go?</div>
+                <div id="itemOne" class="accordion-body">Recipe on the Go is an online platform offering a vast collection of curated recipes designed for home cooks and food lovers.</div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion('itemTwo')">Is Recipe on the Go free to use?</div>
+                <div id="itemTwo" class="accordion-body">Yes, our website is completely free to browse and use.</div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion('itemThree')">Do I need an account to browse recipes?</div>
+                <div id="itemThree" class="accordion-body">No, you don't need an account to explore our recipes.</div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion('itemFour')">How do I contact support?</div>
+                <div id="itemFour" class="accordion-body">Visit our Contact Us page to submit your queries or feedback. We aim to respond within 24-48 hours.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- contact us -->
+    <div id="contactUs">
+        <h1>Contact Us</h1>
+        <div class="form-container">
+            <form action="#" method="POST" onsubmit="sendMessage(event)">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <input type="submit" value="Send Message">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- links -->
+    <div id="links">
+        <div class="contact-info">
+            <div class="contact-card">
+                <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                <p><strong>Our Address:</strong><br> 123, Foodie Street, Recipe Town, Culinary City</p>
+            </div>
+
+            <div class="contact-card">
+                <div class="icon"><i class="fas fa-phone-alt"></i></div>
+                <p><strong>Call Us:</strong><br>+1 234 567 890</p>
+            </div>
+
+            <div class="contact-card">
+                <div class="icon"><i class="fas fa-envelope"></i></div>
+                <p><strong>Email Us:</strong><br>support@recipeonthego.com</p>
+            </div>
+        </div>
+        <div class="contact-info">
+            <div class="contact-card">
+                <div class="icon"><i class="fab fa-facebook"></i></div>
+                <p><strong>Our Facebook:</strong><br>facebook.com/recipeonthego</p>
+            </div>
+
+            <div class="contact-card">
+                <div class="icon"><i class="fab fa-twitter"></i></div>
+                <p><strong>Our Twitter:</strong><br>twitter.com/recipeonthego</p>
+            </div>
+
+            <div class="contact-card">
+                <div class="icon"><i class="fab fa-instagram"></i></div>
+                <p><strong>Our Instagram:</strong><br>instagram.com/recipeonthego</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- back to top -->
+    <a href="#top">
+        <button class="back-to-top">Back to Top</button>
+    </a>
+</body>
+
+</html>

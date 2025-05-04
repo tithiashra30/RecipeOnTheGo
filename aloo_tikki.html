@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aloo Tikki</title>
+    <link rel="stylesheet" href="recipe.css">
+    <style>
+        img {
+            height: 450px;
+            width: 600px;
+            border-radius: 10px;
+        }
+    </style>
+    <script src="recipe.js"></script>
+</head>
+<body>
+    <div class="header">
+        <h1>Aloo Tikki</h1>
+        <button class="home-button" onclick="window.history.back();">
+            <img src="home.png" alt="Back">
+        </button>
+    </div>
+    <h3>Preparation Time: 30 minutes</h3>
+    <p>Aloo Tikki is a crispy and flavorful Indian street food snack made from mashed potatoes, spices, and herbs, shallow-fried to perfection.</p>
+
+    <div class="container">
+        <div class="ingredients">
+            <h2>Ingredients</h2>
+            <ul class="checklist">
+                <li><input type="checkbox" id="potatoes"><label for="potatoes"> 3 medium potatoes (boiled & mashed)</label></li>
+                <li><input type="checkbox" id="bread-crumbs"><label for="bread-crumbs"> ½ cup bread crumbs</label></li>
+                <li><input type="checkbox" id="cornflour"><label for="cornflour"> 2 tbsp cornflour</label></li>
+                <li><input type="checkbox" id="green-chilies"><label for="green-chilies"> 1-2 green chilies (finely chopped)</label></li>
+                <li><input type="checkbox" id="coriander"><label for="coriander"> 2 tbsp fresh coriander (chopped)</label></li>
+                <li><input type="checkbox" id="ginger"><label for="ginger"> 1 tsp ginger paste</label></li>
+                <li><input type="checkbox" id="garam-masala"><label for="garam-masala"> 1 tsp garam masala</label></li>
+                <li><input type="checkbox" id="chaat-masala"><label for="chaat-masala"> 1 tsp chaat masala</label></li>
+                <li><input type="checkbox" id="salt"><label for="salt"> Salt to taste</label></li>
+                <li><input type="checkbox" id="oil"><label for="oil"> Oil for shallow frying</label></li>
+            </ul>
+        </div>
+        <img src="aloo_tikki.png" alt="Aloo Tikki">
+    </div>
+
+    <div class="container">
+        <div class="procedure">
+            <h2>Procedure</h2>
+            <ul>
+                <li>Prepare the Dough – Mix mashed potatoes, bread crumbs, cornflour, green chilies, coriander, ginger paste, garam masala, chaat masala, and salt in a bowl.</li>
+                <li>Shape the Tikkis – Divide the mixture and shape them into small round patties.</li>
+                <li>Heat Oil – Heat some oil in a pan over medium heat.</li>
+                <li>Shallow Fry – Fry the tikkis until golden brown and crispy on both sides.</li>
+                <li>Drain & Serve – Remove excess oil with tissue paper and serve hot with chutneys.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="nutrition-fact-container">
+        <table>
+            <tr><th>Nutrient</th><th>Amount</th></tr>
+            <tr><td>Calories</td><td>200-250 kcal</td></tr>
+            <tr><td>Carbohydrates</td><td>30g</td></tr>
+            <tr><td>Protein</td><td>4g</td></tr>
+            <tr><td>Fats</td><td>8g</td></tr>
+            <tr><td>Fiber</td><td>3g</td></tr>
+        </table>
+        <div class="fun-fact"><strong>Fun Fact:</strong> Aloo Tikki is the inspiration behind the famous McAloo Tikki burger in India!</div>
+    </div>
+</body>
+</html>
